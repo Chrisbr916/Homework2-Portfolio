@@ -6,8 +6,7 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
-    text-decoration: none;
+   
 }
 .max-width{
     max-width: 1300px;
@@ -59,35 +58,40 @@
     margin-left: 25px;
 
 }
-
-
-.container{
-    display:flex;
+.red-border{
     border-radius: 40px;
     transition: all 0.5s ease-in-out;
-    margin:20px;
     border: 5px solid var(--thirdcolor);
+
+}
+.container{
+    display:flex;
+    margin:20px;
     padding: 20px;
 
 }
-/*#aboutme {
-    width: 50%;
+#aboutme {
     padding: 20px;
-    border: 5px solid var(--thirdcolor); 
+    
     
    
-}*/
+}
     /*this will make the glow happen*/
-.container:hover{
+.red-border:hover{
     box-shadow: inset 0px 0px 8px var(--thirdcolor), 0 0 15px var(--thirdcolor);
 }
 #comingsoon{
     width: 50%;
     padding: 20px;
-    border: 5px solid var(--thirdcolor);
-    border-radius: 40px;
   
 }
 h3 {
     font-style: bold;
 }
+
+@media only screen and (max-width: 600px) {
+    .about-me-container{
+        display:flex;
+        flex-direction: column;
+    }
+  }
